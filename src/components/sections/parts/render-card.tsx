@@ -1,6 +1,6 @@
-import type { JSX } from "@solidjs/web";
-import { createSignal, Show } from "solid-js";
-import ImageModal from "~/components/media/image-modal";
+import type { JSX } from '@solidjs/web';
+import { createSignal, Show } from 'solid-js';
+import ImageModal from '~/components/media/image-modal';
 
 export interface RenderInfoProps {
   title: string;
@@ -29,14 +29,20 @@ export default function RenderCard(props: RenderCardProps) {
           <a href="https://www.sedaia-designs.org">Art Portfolio</a>
         </div>
         <div class="project-link">
-          <a href="https://gitlab.com/sedaia-designs/advanced-character-rig">SACR Project</a>
+          <a href="https://gitlab.com/sedaia-designs/advanced-character-rig">
+            SACR Project
+          </a>
         </div>
       </div>
       <figure class="render-card">
         <Show
-          when={data().img && data().img !== "{none}"}
+          when={data().img && data().img !== '{none}'}
           fallback={
-            <div class="render-placeholder" role="img" aria-label="3D render preview placeholder">
+            <div
+              class="render-placeholder"
+              role="img"
+              aria-label="3D render preview placeholder"
+            >
               <span>Render Preview Placeholder</span>
             </div>
           }
@@ -55,9 +61,7 @@ export default function RenderCard(props: RenderCardProps) {
           />
         </Show>
 
-        <figcaption>
-          {data().caption}
-        </figcaption>
+        <figcaption>{data().caption}</figcaption>
       </figure>
     </div>
   );

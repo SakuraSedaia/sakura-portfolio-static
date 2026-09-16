@@ -3,17 +3,22 @@ export default function BackgroundArticle() {
     <article id="background">
       <h2>My Background</h2>
       <p>
-        I am an experienced multi-disciplinary technician, 3D Voxel artist, and novice software engineer with a diverse background. I got my
-        start in 2017 when I got introduced to the world of HTML development by a senior friend in high school, and
-        since then my skills have only grown, and passion for computers, cars, and communications has only
-        grown!
+        I am an experienced multi-disciplinary technician, 3D Voxel artist, and
+        novice software engineer with a diverse background. I got my start in
+        2017 when I got introduced to the world of HTML development by a senior
+        friend in high school, and since then my skills have only grown, and
+        passion for computers, cars, and communications has only grown!
       </p>
 
       <p>
-        My love for computers starts from a young age, when I got my first personal computer in 2014. It would be
-        then that I began experimenting with Computer Generated Graphics using <a href="https://blender.org"
-          target="_blank"
-          rel="noopener noreferrer">Blender 3D</a>, a free and open source 3D Rendering, Video Composition, and Image Processing suite
+        My love for computers starts from a young age, when I got my first
+        personal computer in 2014. It would be then that I began experimenting
+        with Computer Generated Graphics using{' '}
+        <a href="https://blender.org" target="_blank" rel="noopener noreferrer">
+          Blender 3D
+        </a>
+        , a free and open source 3D Rendering, Video Composition, and Image
+        Processing suite
       </p>
 
       <h3>My skills</h3>

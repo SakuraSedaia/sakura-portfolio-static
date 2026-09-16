@@ -1,4 +1,4 @@
-@use "styles/image-modal";
+@use 'styles/image-modal';
 
 :root {
   --color-background: hsl(307deg 5% 13%);
@@ -93,11 +93,11 @@ h2 {
   cursor: pointer;
   box-shadow: 0 0 0 hsla(0, 0%, 0%, 0.12);
   transition:
-          background-color 150ms ease,
-          border-color 150ms ease,
-          color 150ms ease,
-          box-shadow 150ms ease,
-          transform 150ms ease;
+    background-color 150ms ease,
+    border-color 150ms ease,
+    color 150ms ease,
+    box-shadow 150ms ease,
+    transform 150ms ease;
 
   .icon {
     transform: translateY(-2px);
@@ -120,7 +120,7 @@ h2 {
     outline-offset: 0.125rem;
   }
 
-  &:is([aria-disabled="true"], :disabled) {
+  &:is([aria-disabled='true'], :disabled) {
     opacity: 0.65;
     cursor: not-allowed;
     pointer-events: none;
@@ -155,7 +155,7 @@ main {
     z-index: 0;
     inset: 0;
     pointer-events: none;
-    content: "";
+    content: '';
   }
 
   &::before {
@@ -165,7 +165,7 @@ main {
   }
 
   &.collage-loaded::before {
-    background-image: url("/images/render-collage.avif");
+    background-image: url('/images/render-collage.avif');
     animation: render-collage-scroll 120s infinite linear;
   }
 
@@ -221,8 +221,8 @@ main {
 
   #navigation {
     --margin: 3rem;
-    padding-inline: calc(var(--margin)/2);
-    margin: 1rem calc(var(--margin)/2);
+    padding-inline: calc(var(--margin) / 2);
+    margin: 1rem calc(var(--margin) / 2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -269,7 +269,7 @@ main {
 
   .about-image {
     float: right;
-    border: .3rem solid var(--color-background);
+    border: 0.3rem solid var(--color-background);
     width: 300px;
     max-width: 100%;
     height: auto;
@@ -288,12 +288,11 @@ main {
     border-bottom-right-radius: 1rem;
     margin-inline: 1.5rem;
     background-image: linear-gradient(
-            to top,
-            var(--bar-color) 0px,
-            var(--bar-color) var(--bar-thickness),
-            hsl(0 40% 20%) var(--bar-thickness),
-            hsla(0 40% 20% / 50%)
-
+      to top,
+      var(--bar-color) 0px,
+      var(--bar-color) var(--bar-thickness),
+      hsl(0 40% 20%) var(--bar-thickness),
+      hsla(0 40% 20% / 50%)
     );
   }
 }
@@ -382,11 +381,11 @@ article {
       margin-top: 0;
       margin-bottom: 0;
       border-bottom: 1px solid var(--color-link);
-      padding-bottom: calc(var(--heading-gap)/2);
+      padding-bottom: calc(var(--heading-gap) / 2);
     }
 
     ul {
-      margin-top: calc(var(--heading-gap)/2);
+      margin-top: calc(var(--heading-gap) / 2);
       padding-left: 1rem;
       margin-bottom: 0;
     }
@@ -409,7 +408,6 @@ article {
       border-bottom: 0;
     }
   }
-
 
   h3 {
     margin-top: 0;
@@ -511,7 +509,7 @@ article.get-in-touch {
     &:before {
       position: relative;
       display: block;
-      content: "";
+      content: '';
       width: 50%;
       height: 100%;
     }
@@ -533,14 +531,14 @@ article.get-in-touch {
 .tgl-flat {
   + .tgl-btn {
     padding: 2px;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
     background: var(--color-surface-1);
     border: 2px solid var(--color-link);
     border-radius: 2em;
     &:after {
-      transition: all .2s ease;
+      transition: all 0.2s ease;
       background: var(--color-link);
-      content: "";
+      content: '';
       border-radius: 1em;
     }
   }
