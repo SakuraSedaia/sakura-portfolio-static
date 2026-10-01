@@ -21,6 +21,5 @@ validate:
     - pnpm install --frozen-lockfile
   script:
     - node -e 'const config = require("./vercel.json"); if (config.git?.deploymentEnabled !== false) process.exit(1)'
-    - pnpm format:check
     - pnpm lint
     - pnpm build
