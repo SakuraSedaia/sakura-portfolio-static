@@ -4,31 +4,36 @@
   "description": "Sakura Sedaia personal portfolio",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@10.22.0",
+  "engines": {
+    "node": ">=22.18.0 <23",
+    "pnpm": ">=10.22.0 <11"
+  },
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
     "lint": "eslint src",
-    "format": "prettier --ignore-path ../../.prettierignore --write .",
-    "format:check": "prettier --ignore-path ../../.prettierignore --check ."
+    "format": "prettier --ignore-path .prettierignore --write .",
+    "format:check": "prettier --ignore-path .prettierignore --check ."
   },
   "license": "MIT",
   "devDependencies": {
-    "@eslint/js": "catalog:",
-    "@solidjs/vite-plugin": "catalog:",
-    "@typescript-eslint/parser": "catalog:",
-    "autoprefixer": "catalog:",
-    "eslint": "catalog:",
-    "eslint-plugin-solid": "catalog:",
-    "postcss": "catalog:",
-    "prettier": "catalog:",
-    "sass": "catalog:portfolio",
-    "typescript": "catalog:",
-    "vite": "catalog:"
+    "@eslint/js": "^10.0.1",
+    "@solidjs/vite-plugin": "3.0.0-next.43",
+    "@typescript-eslint/parser": "^8.44.0",
+    "autoprefixer": "^10.5.4",
+    "eslint": "^10.8.1",
+    "eslint-plugin-solid": "~0.18.0",
+    "postcss": "^8.5.26",
+    "prettier": "^3.9.6",
+    "sass": "^1.102.0",
+    "typescript": "^5.9.2",
+    "vite": "^8.1.5"
   },
   "dependencies": {
-    "@solidjs/web": "catalog:",
-    "solid-js": "catalog:"
+    "@solidjs/web": "2.0.0-rc.8",
+    "solid-js": "2.0.0-rc.8"
   }
 }

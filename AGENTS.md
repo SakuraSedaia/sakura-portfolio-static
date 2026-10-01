@@ -6,8 +6,8 @@ This project is the static professional portfolio. It uses SolidJS 2,
 TypeScript, Vite, and Sass without SolidStart, a router, or server runtime.
 `vite build` emits the deployable static site in `dist/client`.
 
-Dynamic public content may be fetched from sibling project
-`../sedaia-central-api`. Do not connect this frontend directly to
+Dynamic public content may be fetched from the independent
+`sedaia-central-api` project. Do not connect this frontend directly to
 `sedaia-main-db`, add server-only behavior, or introduce SolidStart unless the
 deployment architecture is intentionally reconsidered across the workspace.
 
@@ -41,10 +41,6 @@ pnpm serve
 
 Run focused tests when present, then `pnpm build` and `git diff --check` for
 behavior or configuration changes as applicable.
-
-## Skills
-
-Use the repository-level skills declared in `../../AGENTS.md`. For portfolio work, apply the frontend code-style, accessibility, and brand-icon skills with this file's portfolio-specific architecture and conventions.
 
 Do not commit, push, tag, release, deploy, or modify remote services without
 explicit authorization.
