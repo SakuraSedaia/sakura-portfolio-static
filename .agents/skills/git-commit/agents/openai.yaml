@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sedaia Portfolio Commit"
+  short_description: "Create safe workspace-scoped Git commits"
+  default_prompt: "Use $git-commit to commit this logical workspace change safely."
