@@ -13,8 +13,7 @@ const projects: ProgrammingResponse[] = [
 - Python Intellisense Stub installations
 
 The plugin is currently at version 1.0.0 Beta 3, with the main development being focused on refinement and security in preparation for a full 1.0.0 release.`,
-    projectPage:
-      'https://www.sedaia-designs.org/projects/blender-development',
+    projectPage: 'https://www.sedaia-designs.org/projects/blender-development',
     sourceCode: 'https://gitlab.com/sedaia-designs/blender_pycharm',
     documentation: 'https://docs.blender-development.sakura-sedaia.tech/',
   },
@@ -27,8 +26,7 @@ The plugin is currently at version 1.0.0 Beta 3, with the main development being
 - Reusable Blender scripts for specialized, one-off tasks
 
 The rig is actively maintained across Blender versions, while Sakura Rig Utilities is in early development as the future home for discovering, downloading, and importing SACR rigs directly in Blender.`,
-    projectPage:
-      'https://www.sedaia-designs.org/projects/sakura-character-rig',
+    projectPage: 'https://www.sedaia-designs.org/projects/sakura-character-rig',
     sourceCode: 'https://gitlab.com/sedaia-designs/advanced-character-rig',
     documentation: 'https://docs.sakura-sedaia.com',
   },

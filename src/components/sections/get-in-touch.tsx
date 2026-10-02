@@ -1,7 +1,7 @@
 import { ContactResponse } from '~/lib/types';
 import { For, Loading } from 'solid-js';
 import { Href } from '~/components/routing/Href.tsx';
-import IconBundle from "~/components/media/icon-bundle.tsx";
+import IconBundle from '~/components/media/icon-bundle.tsx';
 
 export function Contact(props: { content: ContactResponse[] }) {
   return (
@@ -14,7 +14,11 @@ export function Contact(props: { content: ContactResponse[] }) {
       <div class="actions">
         <Loading fallback={<span>Loading...</span>}>
           <For each={props.content}>
-            {(item) => <Href href={item.href} class={"button"}>{item.label} <IconBundle name={item.icon ?? ""} /></Href>}
+            {(item) => (
+              <Href href={item.href} class={'button'}>
+                {item.label} <IconBundle name={item.icon ?? ''} />
+              </Href>
+            )}
           </For>
         </Loading>
       </div>
